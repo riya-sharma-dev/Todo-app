@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+   <div class="topbar">
+        <p class="eyebrow">Plan your day</p>
+        <h1>My Tasks</h1>
+        <p class="subtext">Stay focused and keep track of what matters.</p>
+      </div>
+  
+ <header></header>
+
+  <div class="todo-input">
+    <input type="text" id="taskInput" placeholder="Add a new task...">
+  </div>
+ 
+
+<div class="todo-category">
+  <select id="category">
+    <!-- “value data hold karta hai, aur JS usko backend ya storage me bhejta hai” -->
+      <option value=""> select category</option>
+      <option value="study">study</option>
+      <option value="Shopping">Shopping</option>
+      <option value="Personal">Personal</option>
+      <option value="Work">Work</option>
+    </select>
+
+    <button id="addBtn">Add</button>
+</div>
+
+  <p id="counter"></p>
+
+  <ul id="taskList"></ul>
+
+
+  <div class="clear-container">
+    <button class="clearBtn">Clear</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html> 
+
