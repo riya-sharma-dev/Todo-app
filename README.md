@@ -4,7 +4,7 @@
 
 🚀 Live Demo
 
-👉 https://riya-sharma-dev.github.io/Todo-app/
+👉  https://riya-sharma-dev.github.io/Todo-app/
 
 📌 Features
 
