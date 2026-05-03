@@ -88,8 +88,10 @@ if(item.completed){
     // remove event
     remove.classList.add("delete")
     remove.textContent ="🗑️"
+
     remove.addEventListener('click', function(){
      
+// “Index is unstable because it changes after operations like delete or filter, so I use a unique and stable ID like Date.now() to safely identify items.”
 
         tasks = tasks.filter(i => i.id !== item.id)
         localStorage.setItem("tasks", JSON.stringify(tasks))
@@ -99,6 +101,7 @@ if(item.completed){
     // edit event
     edit.classList.add("edit")
     edit.textContent = "✎"
+
     edit.addEventListener('click', function(){
         let newValue = prompt("Edit Task", item.text)
         if(newValue){
@@ -336,7 +339,7 @@ function addTask(){
 
 tasks.push({
     text:value,
-    id: Date.now(), // li has uniqic id
+    id: Date.now(), // li has uniqic id and it is stable.
     completed: false,
     pinned: false,
     category: categoryValue.toLowerCase().trim()

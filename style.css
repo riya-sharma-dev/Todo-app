@@ -6,7 +6,7 @@
 
 
 body {
-  min-height: 100dvh;  /* vh hatao */
+  min-height: 100dvh;  
   font-family: "Segoe UI", sans-serif;
   color: #142126;
   background-image: url(bg.avif);
@@ -14,9 +14,9 @@ body {
 
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* center hatao */
+  align-items: flex-start; 
 
-  overflow-y: auto; /* hidden hatao */
+  overflow-y: auto; 
 }
 
 
@@ -338,7 +338,7 @@ header{
 #category,
 #addBtn{
   height: 40px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 #counter{
