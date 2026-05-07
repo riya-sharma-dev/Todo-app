@@ -37,10 +37,26 @@ function showTask(list = tasks){
        if (tasks.length === 0) {
     ul.innerHTML = "<p>No tasks yet 😴</p>"
     return
-}
+ }
+
+
+// “list.length only tells that the result is empty, but it does not tell the reason. So I check the search value to determine whether the empty state is due to search or category filter, and show the correct message accordingly.”
+
+// “all default state hai, isliye 
+// hum check karte hain ki user all me
+//  nahi hai, tabhi hum filter wala message show karte hain”
 
 if (list.length === 0) {
-    ul.innerHTML = "<p>No matching tasks found 🔍</p>"
+    let search = input.value.trim()
+
+    if(search){
+  ul.innerHTML = "<p>No matching tasks found 🔍</p>"
+}
+
+else if(currentFilter !== 'allBtn'){
+ ul.innerHTML =   `"<p>No tasks in this Filter</P>"`
+}
+    
     return
 }
     
